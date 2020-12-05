@@ -1,3 +1,4 @@
+__version__ = '0.1.0rc2'
 import os
 
 from setuptools import setup, find_packages
@@ -12,7 +13,7 @@ with open(path.join(this_directory, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='skytemple-eventserver',
-    version='0.1.0rc2',
+    version=__version__,
     packages=find_packages(),
     description='Websocket server that emits SkyTemple UI events',
     long_description=long_description,
