@@ -16,7 +16,7 @@
 #  along with SkyTemple.  If not, see <https://www.gnu.org/licenses/>.
 import json
 
-from websocket_server import WebsocketServer
+from skytemple_eventserver.websocket_server import WebsocketServer
 
 from skytemple.core.abstract_module import AbstractModule
 from skytemple.core.events.abstract_listener import AbstractListener

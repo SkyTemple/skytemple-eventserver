@@ -19,9 +19,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/x-rst',
     url='https://github.com/SkyTemple/skytemple-eventserver/',
-    install_requires=[
-        'websocket-server @ git+https://github.com/Pithikos/python-websocket-server.git'
-    ],
+    install_requires=[],
     extras_require={
         'discord':  ["pypresence >= 4.0.0"]
     },

@@ -17,7 +17,7 @@
 import logging
 from threading import Thread
 
-from websocket_server import WebsocketServer
+from skytemple_eventserver.websocket_server import WebsocketServer
 
 from skytemple.core.abstract_module import AbstractModule
 from skytemple.core.events.manager import EventManager
