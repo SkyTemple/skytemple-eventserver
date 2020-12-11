@@ -1,4 +1,4 @@
-__version__ = '0.1.0rc2'
+__version__ = '1.0.0'
 import os
 
 from setuptools import setup, find_packages
@@ -24,12 +24,13 @@ setup(
         'discord':  ["pypresence >= 4.0.0"]
     },
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Programming Language :: Python',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8'
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
     ],
     entry_points='''
         [skytemple.module]
