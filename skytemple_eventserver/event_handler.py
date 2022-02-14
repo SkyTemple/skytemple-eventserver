@@ -1,4 +1,4 @@
-#  Copyright 2020-2021 Parakoopa and the SkyTemple Contributors
+#  Copyright 2020-2021 Capypara and the SkyTemple Contributors
 #
 #  This file is part of SkyTemple.
 #
@@ -21,7 +21,6 @@ from skytemple_eventserver.websocket_server import WebsocketServer
 from skytemple.core.abstract_module import AbstractModule
 from skytemple.core.events.abstract_listener import AbstractListener
 from skytemple.core.module_controller import AbstractController
-from skytemple.core.rom_project import RomProject
 
 
 class EventHandler(AbstractListener):
@@ -43,8 +42,6 @@ class EventHandler(AbstractListener):
             return {k: cls._stringify(v) for k, v in obj.items()}
         if isinstance(obj, list) or isinstance(obj, set) or isinstance(obj, tuple):
             return [cls._stringify(a) for a in obj]
-        if isinstance(obj, RomProject):
-            return obj.filename
         if isinstance(obj, AbstractModule):
             return obj.__class__.__name__
         if isinstance(obj, AbstractController):
