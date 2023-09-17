@@ -21,7 +21,10 @@ from skytemple_eventserver.websocket_server import WebsocketServer
 
 from skytemple.core.abstract_module import AbstractModule
 from skytemple.core.events.manager import EventManager
-from skytemple.main import SKYTEMPLE_LOGLEVEL
+try:
+    from skytemple.main import SKYTEMPLE_LOGLEVEL
+except ImportError:
+    from skytemple.core.logger import SKYTEMPLE_LOGLEVEL
 from skytemple_eventserver.event_handler import EventHandler
 
 logger = logging.getLogger(__name__)
