@@ -1,4 +1,4 @@
-#  Copyright 2020-2021 Capypara and the SkyTemple Contributors
+#  Copyright 2020-2023 Capypara and the SkyTemple Contributors
 #
 #  This file is part of SkyTemple.
 #
@@ -65,7 +65,7 @@ class EventserverModule(AbstractModule):
         except BaseException as e:
             logger.error(f"Failed loading websocket eventserver", exc_info=e)
 
-    def load_tree_items(self, item_store, root_node):
+    def load_tree_items(self, *args):
         pass  # n/a
 
     def __init__(self, *args):
